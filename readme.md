@@ -37,12 +37,16 @@ Not mentioned, speculate as signal and zoning
 ## Reward Shaping
 The reward is calculated upon a basic unit $W_t$. If portfolio closed when trading signal converge, then 1000 $W_t$, if stop-loss, big punishment for 1000 $W_t$. If the position does not meet the chance to close during the trading window, punishment for 500 $W_t$.
 
+```
 $$
 W_t=\left|v_{A, t} \times \frac{S_{A, t^{\prime}}-S_{A, t}}{S_{A, t}}+v_{B, t} \times \frac{S_{B, t^{\prime}}-S_{B, t}}{S_{B, t}}\right| t<t^{\prime}
 $$
+```
 
 $S$ stands for the spread, $V$ stands for position volume.
 
+```
 $$
 R_t= \begin{cases}1000 \times W_t & \text { if portfolio closed } \\ -1000 \times W_t & \text { if portfolio reaches stop-loss threshold } \\ -500 \times W_t & \text { if portfolio exited }\end{cases}
 $$
+```
