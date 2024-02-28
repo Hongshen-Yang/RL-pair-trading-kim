@@ -25,10 +25,12 @@ Kim experimented a series of combination between Formation Window and Trading Wi
 | 180 | 90 |
 
 ## Action Space
+The boundary is dynamic. Every time a trading window is entered, the action stands for what boundaries are to be set for the trading window.
+
 |    | A0 | A1 | A2 | A3 | A4 | A5 |
 | -- | -- | -- | -- | -- | -- | -- |
-| Trading Boundary | $\pm$ 0.5 | $\pm$ 1.0 | $\pm$ 1.5 | $\pm$ 2.0 | $\pm$2.5 | $\pm$ 3.0 |
-| Stop-loss Boundary | $\pm$ 0.5 | $\pm$ 1.0 | $\pm$ 1.5 | $\pm$ 2.0 | $\pm$ 2.5 | $\pm$ 3.0 |
+| Trading Boundary | $\pm$ 0.5 | $\pm$ 1.0 | $\pm$ 1.5 | $\pm$ 2.0 | $\pm$ 2.5 | $\pm$ 3.0 |
+| Stop-loss Boundary | $\pm$ 2.5 | $\pm$ 3.0 | $\pm$ 3.5 | $\pm$ 4.0 | $\pm$ 4.5 | $\pm$ 5.0 |
 
 ## Observation
 
