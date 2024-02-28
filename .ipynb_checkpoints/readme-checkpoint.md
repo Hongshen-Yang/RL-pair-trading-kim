@@ -34,9 +34,7 @@ The boundary is dynamic. Every time a trading window is entered, the action stan
 
 ## Observation
 
-> The spread obtained here is used as a state when applying reinforcement learning (i.e., as an input of the DQN).
-
-Only the spread is fed in as the observation
+Not mentioned, speculate as signal and zoning
 
 ## Reward Shaping
 The reward is calculated upon a basic unit $W_t$. If portfolio closed when trading signal converge, then 1000 $W_t$, if stop-loss, big punishment for 1000 $W_t$. If the position does not meet the chance to close during the trading window, punishment for 500 $W_t$.
