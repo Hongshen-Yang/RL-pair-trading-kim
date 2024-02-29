@@ -106,11 +106,9 @@ def unify_dfs(dfs, symbols, period):
     df = pd.merge(df0, df1, on=['time', 'itvl', 'datetime'], suffixes=(f"0", f"1"))
     df = df.drop([f"tic0", f"tic1"], axis=1)
 
-    # df['spread'] = df[f'close0'] - df[f'close1']
-    df['spread'] = orthoregress(df[f'close0'], df[f'close1'])
+    df['spread'] = orthoregress(np.log(df[f'close0']), np.log(df[f'close1']))
 
     zscore = []
-
     for index, row in df.iterrows():
         if index <= period:
             zscore.append(0)

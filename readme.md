@@ -43,7 +43,7 @@ The reward is calculated upon a basic unit $W_t$. If portfolio closed when tradi
 
 ```
 $$
-W_t=\left|v_{A, t} \times \frac{S_{A, t^{\prime}}-S_{A, t}}{S_{A, t}}+v_{B, t} \times \frac{S_{B, t^{\prime}}-S_{B, t}}{S_{B, t}}\right| t<t^{\prime}
+W_t=\left|v_{A, t} \times \frac{S_{A, t^{\prime}}-S_{A, t}}{S_{A, t}}+v_{B, t} \times \frac{S_{B, t^{\prime}}-S_{B, t}}{S_{B, t}}\right|_{t<t^{\prime}}
 $$
 ```
 
