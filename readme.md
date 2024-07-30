@@ -2,7 +2,8 @@
 
 This is a replica of Kim's work on the Reinforcement Pair Trading. The fundamental strategy is to pair trading between trading boundary and Stop-loss boundry. Position shall be opened upon trading bondary and closed at the convergence. An opened position will be forcifully closed for stop-loss boundary or exited beyond trading window.
 
-![Strategy](https://static.hindawi.com/articles/complexity/volume-2019/3582516/figures/3582516.fig.001.jpg)
+![strategy](https://github.com/user-attachments/assets/580c3b3b-8ecd-428a-90a0-75c7ed9d5a3b)
+582516.fig.001.jpg)
 
 > Kim, T., & Kim, H. Y. (2019). Optimizing the pairs-trading strategy using deep reinforcement learning with trading and stop-loss boundaries. Complexity, 2019, e3582516. https://doi.org/10.1155/2019/3582516
 
